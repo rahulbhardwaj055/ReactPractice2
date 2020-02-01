@@ -12,7 +12,17 @@ class App1 extends Component {
     }
 
     switchHandler = () => {
-        console.log('test');
+    //    console.log('test');
+    // not  to use this as this don't work ->    this.state.persons[0].name = 'Rahul';
+        this.setState({
+            persons: [
+                { name: 'Rahul', age: 28 },
+                { name: 'Nishant', age: 26 },
+                { name: 'Vansh', age: 27 }
+            ]
+
+        })
+
     }
 
     render(){
