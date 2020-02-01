@@ -16,9 +16,9 @@ class App1 extends Component {
           <div className="App1">
                 <h1>Hi This is testing</h1>
                 <button>Switch User</button>
-                <Person name={this.state.persons[0]} age={this.state.age[0]}/>
-                <Person name={this.state.persons[1]} age={this.state.age[1]}/>
-                <Person name={this.state.persons[1]} age={this.state.age[2]} >what you want to say ?</Person>
+                <Person name={this.state.persons[0]} age={this.state.persons[0]}/>
+                <Person name={this.state.persons[1]} age={this.state.persons[1]}/>
+                <Person name={this.state.persons[1]} age={this.state.persons[2]} >what you want to say ?</Person>
           </div>
         );
     }
