@@ -11,7 +11,7 @@ function App() {
   );
 }
 
-class App1 {
+class App1 extends Component {
     render(){
         return (
           <div className="App1">
