@@ -11,11 +11,15 @@ class App1 extends Component {
         ]
     }
 
+    switchHandler = () => {
+        console.log('test');
+    }
+
     render(){
         return (
           <div className="App1">
                 <h1>Hi This is testing</h1>
-                <button>Switch User</button>
+                <button onClick={this.switchHandler} >Switch User</button>
                 <Person name={this.state.persons[0].name} age={this.state.persons[0].age}/>
                 <Person name={this.state.persons[1].name} age={this.state.persons[1].age}/>
                 <Person name={this.state.persons[1].name} age={this.state.persons[2].age} >what you want to say ?</Person>
