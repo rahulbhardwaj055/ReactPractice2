@@ -12,6 +12,8 @@ const app = (props) => {
         otherstate: 'some other value'
     });
 
+    console.log(personsState);
+
     const switchHandler = () => {
         //    console.log('test');
         // not  to use this as this don't work ->    personsState.persons[0].name = 'Rahul';
@@ -22,15 +24,15 @@ const app = (props) => {
                 { name: 'Vansh', age: 27 }
             ]
 
-        })
+        });
 
     }
 
 
         return (
-          <div className="App1">
+          <div className="App">
                 <h1>Hi This is testing</h1>
-                <button onClick={this.switchHandler} >Switch User</button>
+                <button onClick={switchHandler} >Switch User</button>
                 <Person name={personsState.persons[0].name} age={personsState.persons[0].age}/>
                 <Person name={personsState.persons[1].name} age={personsState.persons[1].age}/>
                 <Person name={personsState.persons[2].name} age={personsState.persons[2].age} >what you want to say ?</Person>
@@ -38,4 +40,4 @@ const app = (props) => {
         );
 }
 
-
+export default app;
