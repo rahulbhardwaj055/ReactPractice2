@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 import './App.css';
 import Person from './Person/Person.js'
 
-const app = (props) => {
+const app = props => {
     const [ personsState, setPersonsState ] = useState({
         persons: [
             { name: 'test', age: 28 },
             { name: 'test1', age: 26 },
             { name: 'test2', age: 27 }
-        ],
-        otherstate: 'some other value'
+        ]
     });
 
     console.log(personsState);
